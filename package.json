@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "$(npm bin)/gulp watch"
+    "start": "$(npm bin)/gulp watch",
+    "bild-docs": "$(npm bin)/gulp bild-docs"
   },
   "repository": {
     "type": "git",

@@ -44,7 +44,7 @@ gulp.task('browser-sync', function () {
 // min js
 gulp.task('js-min', function () {
     return gulp.src('src/js/**/*.js')
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('docs/js'));
 });
@@ -73,7 +73,7 @@ gulp.task('html', function () {
 
 
 // bild project to docs
-gulp.task('bild', ['html', 'cssmin', 'js-min', 'img']);
+gulp.task('bild-docs', ['html', 'cssmin', 'js-min', 'img']);
 
 
 gulp.task('watch', ['views', 'sass', 'browser-sync'], function () {

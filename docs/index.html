@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+    <main>
+        <div class="search">
+            <input type="text" name="search_location" placeholder="Enter city" />
+            <input id="search" type="button" value="Search" />
+            <ul class="suggestions" id="res_search"></ul>
+        </div>
+        <div class="data_chouse">
+            <input type="button" value="Today" />
+            <input type="button" value="Tomorrow" />
+            <input type="date" name="date" />
+        </div>
+        <div id="chosen_date">
+            <p>Chouse date</p>
+        </div>
+        <div class="info_box">
+            <div class="info">
+                <div class="info_img">
+                    <img src="http://cdn.worldweatheronline.net/images/wsymbols01_png_64/wsymbol_0004_black_low_cloud.png" alt="weather"
+                    />
+                </div>
+                <div class="info_short">
+                    <h1>-5 C</h1>
+                    <h3>Moskow|fogy</h3>
+                </div>
+            </div>
+            <div class="info_weather">
+                <p>Max:
+                    <span id="max_c"></span>
+                </p>
+                <p>Min:
+                    <span id="min_c"></span>
+                </p>
+                <p>Wind:
+                    <span id="wind"></span>
+                </p>
+                <p>Humidity:
+                    <span id="Humidity"></span>
+                </p>
+                <p>Pressure:
+                    <span id="pressure"></span>
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./js/main.js"></script>
+
+</html>
