@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Weather
+        link(rel="stylesheet", href="./css/main.css")
+    body
+        main
+            .search
+                input(type="text", name="search_location", placeholder="Enter city")
+                input#search(type="button", value="Search")
+                ul.suggestions#res_search
+                    //- li Filter for a city
+                    //- li or a state
+    
+            .data_chouse
+                input(type="button", value="Today")
+                input(type="button", value="Tomorrow")
+                input(type="date", name="date")
+            #chosen_date
+                p Chouse date
+            .info_box
+                .info
+                    .info_img
+                        img(src="http://cdn.worldweatheronline.net/images/wsymbols01_png_64/wsymbol_0004_black_low_cloud.png", alt="weather")
+                    .info_short
+                        h1 -5 C
+                        h3 Moskow|fogy
+                .info_weather
+                    p Max: 
+                        span#max_c
+                    p Min:
+                        span#min_c
+                    p Wind: 
+                        span#wind
+                    p Humidity:
+                        span#Humidity
+                    p Pressure:
+                        span#pressure
+    script(src="./js/main.js")
