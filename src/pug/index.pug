@@ -16,27 +16,25 @@ html(lang="en")
                     //- li or a state
     
             .data_chouse
-                input(type="button", value="Today")
-                input(type="button", value="Tomorrow")
+                input#today(type="button", value="Today")
+                input#tomorrow(type="button", value="Tomorrow")
                 input(type="date", name="date")
             #chosen_date
-                p Chouse date
-            .info_box
+                p.hiden Date
+            .info_box.hiden#weahert_info
                 .info
                     .info_img
                         img(src="http://cdn.worldweatheronline.net/images/wsymbols01_png_64/wsymbol_0004_black_low_cloud.png", alt="weather")
                     .info_short
-                        h1 -5 C
-                        h3 Moskow|fogy
+                        h1 
+                        h3
                 .info_weather
-                    p Max: 
-                        span#max_c
-                    p Min:
-                        span#min_c
+                    p Feels:  
+                        span#feels
                     p Wind: 
                         span#wind
-                    p Humidity:
-                        span#Humidity
-                    p Pressure:
+                    p Humidity: 
+                        span#humidity
+                    p Pressure: 
                         span#pressure
     script(src="./js/main.js")

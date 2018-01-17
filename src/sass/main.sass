@@ -43,8 +43,8 @@ body
 main 
     max-width: 500px
     margin: 10px auto 0
-    border: 1px solid 
     background-color: #c4c4c4
+    border-radius: 10px
 
 .info
     max-width: 100%
@@ -70,7 +70,9 @@ main
     &_weather
         p 
             font-size: 1.5rem
-            margin-top: 10px
+            padding: 10px 0
+        span 
+            font-style: italic
 input
     height: 30px
     box-sizing: border-box
@@ -99,6 +101,7 @@ input
     position: absolute
     width: 300px
     li
+        z-index: 2
         background: white
         list-style: none
         border-bottom: 1px solid #D8D8D8
@@ -115,6 +118,8 @@ input
         &:nth-child(odd)
             transform: perspective(100px) rotateX(-3deg) translateY(3px)
             background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%)
+.hiden 
+    opacity: 0
 
 
     
